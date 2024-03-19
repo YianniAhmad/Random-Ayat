@@ -1,0 +1,111 @@
+@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Random Ayat</h1>
+
+<p role="status">Ayat: @ayat</p>
+
+<button class="btn btn-primary" @onclick="ayatgenerator">Click me</button>
+
+@code{
+    private string ayat;
+
+    private void ayatgenerator ()
+    {
+        Random rnd = new Random();
+        int rnum = rnd.Next(1, 23);
+        if(rnum == 1)
+        {
+            ayat = "Say: He is Allah, the One and Only;";
+        }
+        if (rnum == 2)
+        {
+            ayat = "Allah, the Eternal, Absolute;";
+        }
+        if (rnum == 3)
+        {
+            ayat = "He begetteth not, nor is He begotten";
+        }
+        if (rnum == 4)
+        {
+            ayat = "And there is none like unto Him.n";
+        }
+        if (rnum == 5)
+        {
+            ayat = "And I did not create the jinn and mankind except to worship Me";
+        }
+        if (rnum == 6)
+        {
+            ayat = "[He] who created death and life to test you [as to] which of you is best in deed – and He is the Exalted in Might, the Forgiving";
+        }
+        if (rnum == 7)
+        {
+            ayat = "Knowest thou not that to Allah belongeth the dominion of the heavens and the earth? And besides Him ye have neither patron nor helper";
+        }
+        if (rnum == 8)
+        {
+            ayat = "To Allah belong the east and the West: Whithersoever ye turn, there is the presence of Allah. For Allah is all-Pervading, all-Knowing.";
+        }
+        if (rnum == 9)
+        {
+            ayat = "To Allah doth belong the dominion of the heavens and the earth, and all that is therein, and it is He Who hath power over all things.";
+        }
+        if (rnum == 10)
+        {
+            ayat = "Unto Allah belongeth the dominion of the heavens and the earth. He giveth life and He taketh it. Except for Him ye have no protector nor helper.";
+        }
+        if (rnum == 11)
+        {
+            ayat = "Allah. there is no god but He! To Him belong the most Beautiful Names. ";
+        }
+        if (rnum == 12)
+        {
+            ayat = "When My servants ask thee concerning Me, I am indeed close (to them): I listen to the prayer of every suppliant when he calleth on Me: Let them also, with a will, Listen to My call, and believe in Me: That they may walk in the right way";
+        }
+        if (rnum == 13)
+        {
+            ayat = "To Him belong all (creatures) in the heavens and on earth: Even those who are in His (very) Presence are not too proud to serve Him, nor are they (ever) weary (of His service)";
+        }
+        if (rnum == 14)
+        {
+            ayat = "The creation of the Heavens and the Earth is indeed greater then the creation of mankind; yet, most of mankind know not";
+        }
+        if (rnum == 15)
+        {
+            ayat = "  Do they not look at Allah’s creation, (even) among (inanimate) things,- How their (very) shadows turn round, from the right and the left, prostrating themselves to Allah, and that in the humblest manner ";
+        }
+        if (rnum == 16)
+        {
+            ayat = "It is He Who brought you forth from the wombs of your mothers when ye knew nothing; and He gave you hearing and sight and intelligence and affections: that ye may give thanks to Allah.";
+        }
+        if (rnum == 17)
+        {
+            ayat = "Do they not look at the birds, held poised in the midst of (the air and) the sky? Nothing holds them up but (the power of) Allah. Verily in this are signs for those who believe";
+        }
+        if (rnum == 18)
+        {
+            ayat = " Do not the Unbelievers see that the heavens and the earth were joined together (as one unit of creation), before we clove them asunder? We made from water every living thing. Will they not then believe?";
+        }
+        if (rnum == 19)
+        {
+            ayat = " He is the First and the Last, the Evident and the Hidden: and He has full knowledge of all things  ";
+        }
+        if (rnum == 20)
+        {
+            ayat = "If there were, in the heavens and the earth, other gods besides Allah, there would have been confusion in both! but glory to Allah, the Lord of the Throne: (High is He) above what they attribute to Him!";
+
+        }
+        if (rnum == 21)
+        {
+            ayat = "And among His Signs is the creation of the heavens and the earth, and the variations in your languages and your colours: verily in that are Signs for those who know ";
+        }
+        if (rnum == 22)
+        {
+            ayat = "And among His Signs is the sleep that ye take by night and by day, and the quest that ye (make for livelihood) out of His Bounty: verily in that are signs for those who hearken";
+        }
+        
+    }
+
+
+}
